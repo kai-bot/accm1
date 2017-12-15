@@ -18,7 +18,7 @@ clean:
 $(BIN_DIR)/azure-cloud-controller-manager: $(PKG_CONFIG) main.go $(wildcard pkg/**/*)
 	 go build -o $@ $(PKG_CONFIG_CONTENT)
 
-image: $(PKG_CONFIG)
+image:
 	docker build -t $(shell scripts/image-tag.sh) .
 
 $(PKG_CONFIG):

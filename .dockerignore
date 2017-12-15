@@ -4,4 +4,5 @@
 !Makefile
 !pkg 
 !vendor
-!.pkg_config
+!.git
+!scripts/pkg-config.sh
